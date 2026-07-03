@@ -1,9 +1,9 @@
 #!/bin/bash
 
 echo "Pleas Enter your username::"
-read USER_NAME
+read  -s USER_NAME
 
-echo "User name is $USER_NAME" 
+#echo "User name is $USER_NAME" 
 
 
 
