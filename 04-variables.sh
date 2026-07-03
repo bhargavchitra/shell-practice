@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PERSON1=$! # no space between value and = 
+PERSON1=$1 # no space between value and = 
 PERSON2=$2
 
 
