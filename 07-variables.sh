@@ -13,7 +13,3 @@ sleep 100 &
 echo "PID of recently executed background process: $!"
 echo "All args passed to script: $*"
 
-
-
-
-

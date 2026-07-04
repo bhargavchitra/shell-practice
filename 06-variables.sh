@@ -1,20 +1,17 @@
 #!/bin/bash
 
-START_TIME=$(date +%s)
+TIMESTAMP = $(date)
+echo "Script executed at: $TIMESTAMP"
 
-echo "Script executed at: $START_TIME"
+#START_TIME=$(date +%s)
 
-sleep 10
+#echo "Script executed at: $START_TIME"
 
-END_TIME=$(date +%s)
-TOTAL_TIME=$(($END_TIME-$START_TIME))
+#sleep 10
 
-echo " Script executed in: $TOTAL_TIME"
+#END_TIME=$(date +%s)
+#TOTAL_TIME=$(($END_TIME-$START_TIME))
 
-
-
-
-
-
+#echo " Script executed in: $TOTAL_TIME"
 
 
