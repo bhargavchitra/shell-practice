@@ -9,11 +9,8 @@ SUM=$(($NUM1+$NUM2))
 echo "Sum is: $SUM"
 
 
-
 #arrays
-
 FRUITS=("apple" "banana" "orange")
-
 
 echo "Fruits are: ${FRUITS[@]}" 
 echo "Firest are: ${FRUITS[0]}" 
