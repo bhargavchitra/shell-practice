@@ -7,6 +7,7 @@ if [ $USERID -ne 0 ]; then
     exit 1
 fi
 
+#by default shell will not exicuted when called 
 VALIDATE(){
     if [ $? -ne 0 ]; then
         echo "$1  ... FAILURE"
@@ -25,4 +26,3 @@ VALIDATE $?  "Installing MySQL"
 
 dnf install nodejs -y 
 VALIDATE $? "Installing Node.js"
-
