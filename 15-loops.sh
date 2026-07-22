@@ -13,7 +13,7 @@ mkdir -p $LOGS_FOLDER
 
 VALIDATE(){
     if [ $? -ne 0 ]; then
-        echo "$1  ... FAILURE" | tee -a $LOGS_FILE
+        echo "$2  ... FAILURE" | tee -a $LOGS_FILE
         exit 1
   else
        echo "$2   ... success" | tee -a $LOGS_FILE
@@ -30,7 +30,6 @@ do
     else
          echo "$package already installed" skipping "
     fi
-
 done
 
 
