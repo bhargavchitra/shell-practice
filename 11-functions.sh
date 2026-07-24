@@ -26,3 +26,11 @@ VALIDATE $?  "Installing MySQL"
 
 dnf install nodejs -y 
 VALIDATE $? "Installing Node.js"
+
+
+
+
+
+
+USERID=$(id -u); then
+  ec
