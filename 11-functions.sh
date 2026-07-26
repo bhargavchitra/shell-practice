@@ -10,10 +10,10 @@ fi
 #by default shell will not exicuted when called 
 VALIDATE(){
     if [ $1 -ne 0 ]; then
-        echo "  ... FAILURE"
+        echo " $1 ... FAILURE"
         exit 1
   else
-       echo "   ... success"
+       echo " $2  ... success"
  fi
 }
     
