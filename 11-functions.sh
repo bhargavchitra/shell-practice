@@ -9,14 +9,14 @@ fi
 
 #by default shell will not exicuted when called 
 VALIDATE(){
-    if [ $? -ne 0 ]; then
-        echo "$1  ... FAILURE"
+    if [ $1 -ne 0 ]; then
+        echo "  ... FAILURE"
         exit 1
   else
-       echo "$2   ... success"
+       echo "   ... success"
  fi
 }
-
+    
 dnf install nginx -y 
 VALIDATE $? "Installing Nginx"
 
@@ -26,11 +26,3 @@ VALIDATE $?  "Installing MySQL"
 
 dnf install nodejs -y 
 VALIDATE $? "Installing Node.js"
-
-
-
-
-
-
-USERID=$(id -u); then
-  ec
