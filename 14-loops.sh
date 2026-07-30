@@ -12,8 +12,8 @@ fi
 mkdir -p $LOGS_FOLDER
 
 VALIDATE(){
-    if [ $? -ne 0 ]; then
-        echo "$1  ... FAILURE" | tee -a $LOGS_FILE
+    if [ $1 -ne 0 ]; then
+        echo "$2  ... FAILURE" | tee -a $LOGS_FILE
         exit 1
   else
        echo "$2   ... success" | tee -a $LOGS_FILE
@@ -24,6 +24,6 @@ for package in $@   #sudo sh 14-loops.sh nginx mysql nodejs
 do
 
     dnf install $package -y &>> $LOGS_FILE
-    VALIDATE $? "Installing $package"
+    VALIDATE $? "$package Installing "
 
 done
