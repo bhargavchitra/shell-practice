@@ -11,7 +11,7 @@ count=1
 #done
 
 
-count=1
+
 
 while IFS=read -r line; do
 # process each line here 
