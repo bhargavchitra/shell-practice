@@ -19,3 +19,4 @@ echo "$FILES_TO_DELETE"
    #echo "Deleting file: $filepath"
 #done <<< $FILES_TO_DELETE
 
+
