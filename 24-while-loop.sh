@@ -2,13 +2,13 @@
 
 count=1
 
-while [ $count -le 5 ]
-do
-   echo "Count is $count"
-   sleep 1
+#while [ $count -le 5 ]
+#do
+  # echo "Count is $count"
+   #sleep 1
    # increment the counter 
-   ((count++))
-done
+   #((count++))
+#done
 
 
 count=1
