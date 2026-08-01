@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-USERID=$(id -u)
+USERID=$(id -u) 
 LOGS_FOLDER="/var/log/shell-script"
 LOGS_FILE="/var/log/shell-script/$0.log"
 
@@ -12,8 +12,8 @@ fi
 mkdir -p $LOGS_FOLDER
 
 VALIDATE(){
-    if [ $? -ne 0 ]; then
-        echo "$1  ... FAILURE" | tee -a $LOGS_FILE
+    if [ $1 -ne 0 ]; then
+        echo "$2  ... FAILURE" | tee -a $LOGS_FILE
         exit 1
   else
        echo "$2   ... success" | tee -a $LOGS_FILE
@@ -28,4 +28,3 @@ VALIDATE $?  "Installing MySQL"
 
 dnf install nodejs -y &>> $LOGS_FILE
 VALIDATE $? "Installing Nodejs"
-
