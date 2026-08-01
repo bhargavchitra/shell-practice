@@ -18,3 +18,4 @@ echo "$FILES_TO_DELETE"
    #rm -f $filepath
    #echo "Deleting file: $filepath"
 #done <<< $FILES_TO_DELETE
+
