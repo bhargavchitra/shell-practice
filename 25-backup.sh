@@ -12,6 +12,9 @@ M="\e[35m"
 C="\e[36m"
 W="\e[37m"
 N="\e[0m"
+SOURCE_DEL=$1
+DEST_DIR=$2 
+DAYS=${3:-14} # 14 days is the default value, if the user not supplied 
 
 if [ $USERID -ne 0 ]; then
     echo -e "$R Please run this script as root user access $N" 
@@ -27,4 +30,17 @@ USAGE(){
 if [ $# -lt 2 ]; then
    USAGE 
 fi 
+
+if [ ! -d $SOURCE_DIR ]; then 
+     echo -e " $SOURCE_DIR does not exist" 
+     exit 1
+fi 
+
+if [ ! -d $DEST_DIR ]; then 
+     echo -e " $DEST_DIR does not exist" 
+     exit 1
+fi 
+
+
+
 
