@@ -62,4 +62,3 @@ else
    ZIP_FILE_NAME="$DEST_DIR/app-logs-$TIMESTAMP.tar.gz"
    echo "Archieve name: $ZIP_FILE_NAME"
 fi 
-
