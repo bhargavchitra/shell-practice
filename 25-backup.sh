@@ -65,7 +65,7 @@ else
 
    # check archieve is success or not 
     if [ -f $ZIP_FILE_NAME ]; then 
-       log "Archeival is.. $R success $R"
+       log "Archeival is.. $G success $G"
 
        while IFS= read -r filepath; do
        # process each line here 
