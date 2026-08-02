@@ -36,7 +36,7 @@ if [ $# -lt 2 ]; then
 fi 
 
 if [ ! -d $SOURCE_DIR ]; then 
-     echo -e " source directory: $SOURCE_DIR does not exist" 
+     echo -e "source directory: $SOURCE_DIR does not exist" 
      exit 1
 fi 
 
