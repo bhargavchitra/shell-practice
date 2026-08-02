@@ -27,20 +27,30 @@ USAGE(){
     exit 1 
 }
 
+log(){
+    echo -e "$(date "+%y-%m-%d %H:%M:%S") | $1" | tee -a $LOGS_FILE
+}
+
 if [ $# -lt 2 ]; then
    USAGE 
 fi 
 
 if [ ! -d $SOURCE_DIR ]; then 
-     echo -e " $SOURCE_DIR does not exist" 
+     echo -e " source directory: $SOURCE_DIR does not exist" 
      exit 1
 fi 
 
 if [ ! -d $DEST_DIR ]; then 
-     echo -e " $DEST_DIR does not exist" 
+     echo -e " destination directory:  $DEST_DIR does not exist" 
      exit 1
 fi 
 
+# find the files
+FILES=$find $SOURCE_DIR -name "*.log" -type f -mtime +$DAYS 
 
+log "Backup started" 
+log "source Directory: $SOURCE_DIR"
+log "Destination Directory: $DEST_DIR"
+log "Days: $DAYS" 
 
 
