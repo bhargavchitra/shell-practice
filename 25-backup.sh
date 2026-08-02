@@ -56,4 +56,3 @@ log "Days: $DAYS"
 if [ -z $FILES ]; then 
     log "No files to archieve...$Y skipping $Y" 
 LOGS_FILE 
-
