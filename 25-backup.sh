@@ -77,5 +77,4 @@ else
        log "Archeival is ... $R FAILURE $R" 
        exit 1
     fi 
-     
 fi 
